@@ -86,7 +86,11 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="index.html">Tugas Javascript</a></li>
+<<<<<<< HEAD
                   <li><a class="dropdown-item" href="#">Tugas PHP</a></li>
+=======
+                  <li><a class="dropdown-item" href="index.php">Tugas PHP</a></li>
+>>>>>>> 48e173dfc0da9b420591f5b6930d020f9c6343c7
           </div>
         </div>
       </nav>
@@ -204,5 +208,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+<<<<<<< HEAD
 </html>
 
+=======
+</html>
+>>>>>>> 48e173dfc0da9b420591f5b6930d020f9c6343c7
