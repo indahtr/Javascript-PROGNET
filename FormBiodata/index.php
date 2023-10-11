@@ -68,7 +68,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
+          <a class="navbar-brand" href="../index.html">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -86,7 +86,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="index.html">Tugas Javascript</a></li>
-                  <li><a class="dropdown-item" href="#">Tugas PHP</a></li>
+                  <li><a class="dropdown-item" href="index.php">Tugas PHP</a></li>
           </div>
         </div>
       </nav>
@@ -94,36 +94,36 @@
     <div class="container">
         <h1>BIODATA</h1>
         <br>
-        <form id="biodataForm">
+        <form action="proses.php" method="post">
             <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="name@example.com" required><br>
+            <input type="text" id="email" name="email" placeholder="name@example.com" required><br>
 
             <label for="name">Nama:</label>
-            <input type="text" id="name" placeholder="ex : Pande Komang Indah Triroshanti" required><br>
+            <input type="text" id="name" name="nama" placeholder="ex : Pande Komang Indah Triroshanti" required><br>
             <label for="univ">Universitas:</label>
-            <input type="text" id="univ" placeholder="ex : Universitas Udayana" required><br>
+            <input type="text" id="univ" name="univ" placeholder="ex : Universitas Udayana" required><br>
             <label for="fakultas">Fakultas:</label>
-            <input type="text" id="fakultas" placeholder="ex : Fakultas Teknik" required><br>
+            <input type="text" id="fakultas" name="fakultas" placeholder="ex : Fakultas Teknik" required><br>
             <label for="prodi">Program Studi:</label>
-            <input type="text" id="prodi" placeholder="ex : Teknologi Informasi" required><br>
+            <input type="text" id="prodi" name="prodi" placeholder="ex : Teknologi Informasi" required><br>
 
             <label for="nim">NIM:</label>
-            <input type="number" id="nim" placeholder="2205551053" required><br>
+            <input type="number" id="nim" name="nim" placeholder="2205551053" required><br>
 
             <label for="gender">Jenis Kelamin:</label>
-            <select id="gender" required>
+            <select id="gender" name="gender" required>
                 <option value="male">Laki-laki</option>
                 <option value="female">Perempuan</option>
             </select><br>
 
             <label for="age">Umur:</label>
-            <input type="number" id="age" placeholder="19" required><br>
+            <input type="number" id="age" placeholder="19" name="umur" required><br>
 
             <label for="birthplace">Tempat Lahir:</label>
-            <input type="text" id="birthplace" placeholder="ex: Gianyar" required><br>
+            <input type="text" id="birthplace" placeholder="ex: Gianyar" name="birthplace" required><br>
 
             <label for="tglLahir">Tanggal Lahir:</label>
-            <input type="date" id="tglLahir" required><br><br>
+            <input type="date" id="tglLahir" name="tglLahir" required><br><br>
 
             <label for="hobi">Hobi:</label>
             <div class="form-check">
