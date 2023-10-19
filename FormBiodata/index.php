@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas JavaScript</title>
+    <title>Tugas PHP</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,8 +85,8 @@
                   Projects
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Tugas Javascript</a></li>
-                  <li><a class="dropdown-item" href="index.php">Tugas PHP</a></li>
+                  <li><a class="dropdown-item" href="index.html">Tugas Javascript</a></li>
+                  <li><a class="dropdown-item" href="#">Tugas PHP</a></li>
                   <li><a class="dropdown-item" href="index2.php">Connect Database</a></li>
           </div>
         </div>
@@ -95,58 +95,58 @@
     <div class="container">
         <h1>BIODATA</h1>
         <br>
-        <form id="biodataForm">
+        <form action="proses.php" method="post">
             <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="name@example.com" required><br>
+            <input type="text" id="email" name="email" placeholder="name@example.com" required><br>
 
             <label for="name">Nama:</label>
-            <input type="text" id="name" placeholder="ex : Pande Komang Indah Triroshanti" required><br>
+            <input type="text" id="name" name="nama" placeholder="ex : Pande Komang Indah Triroshanti" required><br>
             <label for="univ">Universitas:</label>
-            <input type="text" id="univ" placeholder="ex : Universitas Udayana" required><br>
+            <input type="text" id="univ" name="univ" placeholder="ex : Universitas Udayana" required><br>
             <label for="fakultas">Fakultas:</label>
-            <input type="text" id="fakultas" placeholder="ex : Fakultas Teknik" required><br>
+            <input type="text" id="fakultas" name="fakultas" placeholder="ex : Fakultas Teknik" required><br>
             <label for="prodi">Program Studi:</label>
-            <input type="text" id="prodi" placeholder="ex : Teknologi Informasi" required><br>
+            <input type="text" id="prodi" name="prodi" placeholder="ex : Teknologi Informasi" required><br>
 
             <label for="nim">NIM:</label>
-            <input type="number" id="nim" placeholder="2205551053" required><br>
+            <input type="number" id="nim" name="nim" placeholder="2205551053" required><br>
 
             <label for="gender">Jenis Kelamin:</label>
-            <select id="gender" required>
+            <select id="gender" name="gender" required>
                 <option value="male">Laki-laki</option>
                 <option value="female">Perempuan</option>
             </select><br>
 
             <label for="age">Umur:</label>
-            <input type="number" id="age" placeholder="19" required><br>
+            <input type="number" id="age" placeholder="19" name="umur" required><br>
 
             <label for="birthplace">Tempat Lahir:</label>
-            <input type="text" id="birthplace" placeholder="ex: Gianyar" required><br>
+            <input type="text" id="birthplace" placeholder="ex: Gianyar" name="birthplace" required><br>
 
             <label for="tglLahir">Tanggal Lahir:</label>
-            <input type="date" id="tglLahir" required><br><br>
+            <input type="date" id="tglLahir" name="tglLahir" required><br><br>
 
             <label for="hobi">Hobi:</label>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="Jurnalistik" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                   Jurnalistik
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="Menyanyi" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
                   Menyanyi
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="Menari" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
                   Menari
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="Olahraga" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
                   Olahraga
                 </label>
@@ -155,37 +155,37 @@
             <br/>
             <label for="agama">Agama : </label>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="hindu">
+                <input class="form-check-input" type="radio" name="agama" id="hindu" value="hindu">
                 <label class="form-check-label" for="hindu">
                   Hindu
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="kristen">
+                <input class="form-check-input" type="radio" name="agama" id="kristen value="kristen">
                 <label class="form-check-label" for="kristen">
                   Kristen
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="katolik">
+                <input class="form-check-input" type="radio" name="agama" id="katolik" value="katolik">
                 <label class="form-check-label" for="katolik">
                   Katolik
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="buddha">
+                <input class="form-check-input" type="radio" name="agama" id="buddha" value="buddha">
                 <label class="form-check-label" for="buddha">
                   Buddha
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="konghucu">
+                <input class="form-check-input" type="radio" name="agama" id="konghucu" value="konghucu">
                 <label class="form-check-label" for="konghucu">
                   Kong Hu Cu
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="islam" checked>
+                <input class="form-check-input" type="radio" name="agama" id="islam" checked value="islam">
                 <label class="form-check-label" for="islam">
                   Islam
                 </label>
@@ -206,3 +206,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
+
